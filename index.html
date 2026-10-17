@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1630">
+<title>ConvoCAT · L'app del teu equip</title>
+<meta name="description" content="ConvoCAT: l'app gratuïta de cada equip del teu club. Partits, resultats, classificació, golejadors, entrenaments i avisos al mòbil.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230f1630'/%3E%3Cpath d='M41 22a14 14 0 1 0 0 20' fill='none' stroke='%23ffc93c' stroke-width='7' stroke-linecap='round'/%3E%3Ccircle cx='44' cy='32' r='4' fill='%23ff4d5a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,800;1,900&family=Barlow:wght@500;600;700&display=swap">
+<style>
+  :root {
+    --nit: #0f1630; --nit-2: #1b2550; --groc: #ffc93c; --vermell: #ff4d5a;
+    --tinta: #131722; --gris: #5f6678; --linia: #e6eaf2; --fons: #f4f6fa; --blanc: #fff;
+    --display: "Barlow Condensed", "Arial Narrow", sans-serif;
+    --text: "Barlow", "Segoe UI", Roboto, sans-serif;
+  }
+  [hidden] { display: none !important; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--fons); color: var(--tinta); font-family: var(--text); -webkit-font-smoothing: antialiased; }
+  a, button, input { font: inherit; -webkit-tap-highlight-color: transparent; }
+  a:focus-visible, input:focus-visible { outline: 3px solid var(--groc); outline-offset: 3px; }
+  .app { box-sizing: border-box; max-width: 520px; min-height: 100vh; margin: 0 auto; background: var(--blanc); }
+
+  /* ---------- Capçalera ---------- */
+  .heroi {
+    position: relative; overflow: hidden; color: #fff;
+    background: radial-gradient(120% 90% at 85% 0%, #2b3a80 0%, var(--nit-2) 38%, var(--nit) 100%);
+    padding: calc(28px + env(safe-area-inset-top, 0px)) 22px 30px;
+    border-radius: 0 0 32px 32px;
+  }
+  .heroi svg.camp { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  .marca { position: relative; display: flex; align-items: center; gap: 12px; }
+  .marca svg { width: 46px; height: 46px; flex: none; }
+  .nom { font-family: var(--display); font-style: italic; font-weight: 900; font-size: 2.6rem; line-height: 1; letter-spacing: -0.01em; }
+  .nom b { color: var(--groc); font-weight: 900; }
+  .lema { position: relative; margin: 22px 0 0; font-family: var(--display); font-weight: 800; font-size: 2.15rem; line-height: 1.02; text-transform: uppercase; }
+  .lema span { color: var(--groc); }
+  .intro { position: relative; margin: 12px 0 0; color: #c9d1ee; font-size: 1rem; line-height: 1.45; max-width: 30em; }
+  .xips { position: relative; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+  .xip { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.22); border-radius: 999px; padding: 6px 12px; font-size: 0.82rem; font-weight: 600; }
+
+  main { padding: 22px 20px 34px; display: flex; flex-direction: column; gap: 18px; }
+  h2 { margin: 6px 0 0; font-family: var(--display); font-weight: 800; font-size: 1.45rem; text-transform: uppercase; letter-spacing: 0.02em; }
+  h2 small { font-family: var(--text); font-size: 0.8rem; font-weight: 600; color: var(--gris); text-transform: none; letter-spacing: 0; margin-left: 6px; }
+
+  .cercar { position: relative; }
+  .cercar svg { position: absolute; left: 14px; top: 50%; width: 18px; height: 18px; transform: translateY(-50%); color: var(--gris); }
+  .cercar input { box-sizing: border-box; width: 100%; border: 1.5px solid var(--linia); border-radius: 16px; background: var(--fons); padding: 13px 14px 13px 42px; font-size: 1rem; }
+  .cercar input:focus { outline: none; border-color: var(--nit-2); background: #fff; }
+
+  .clubs { display: flex; flex-direction: column; gap: 10px; }
+  .club {
+    display: flex; align-items: center; gap: 14px; padding: 12px; border-radius: 20px;
+    border: 1.5px solid var(--linia); background: #fff; color: inherit; text-decoration: none;
+    transition: border-color .15s, box-shadow .15s, transform .15s;
+  }
+  .club:hover { border-color: var(--c); box-shadow: 0 10px 22px -16px var(--c); }
+  .club:active { transform: scale(0.99); }
+  .club img { width: 56px; height: 56px; border-radius: 15px; flex: none; }
+  .club-txt { flex: 1; min-width: 0; }
+  .club-nom { font-family: var(--display); font-weight: 800; font-size: 1.35rem; line-height: 1.05; text-transform: uppercase; }
+  .club-info { margin-top: 3px; font-size: 0.84rem; color: var(--gris); }
+  .club i { flex: none; font-style: normal; font-weight: 700; color: #fff; background: var(--c); border-radius: 999px; padding: 9px 14px; font-size: 0.85rem; }
+  .buit { text-align: center; color: var(--gris); padding: 14px 0; font-size: 0.92rem; }
+
+  .passos { display: grid; gap: 10px; counter-reset: pas; }
+  .pas { display: flex; gap: 12px; align-items: flex-start; padding: 14px; border-radius: 18px; background: var(--fons); }
+  .pas b { flex: none; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; background: var(--nit); color: var(--groc); font-family: var(--display); font-style: italic; font-weight: 900; font-size: 1.15rem; }
+  .pas strong { display: block; font-size: 0.98rem; }
+  .pas span { display: block; color: var(--gris); font-size: 0.86rem; margin-top: 2px; line-height: 1.35; }
+
+  .que { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .que div { border: 1.5px solid var(--linia); border-radius: 16px; padding: 12px; font-size: 0.86rem; color: var(--gris); line-height: 1.35; }
+  .que div b { display: block; color: var(--tinta); font-size: 0.95rem; margin-bottom: 2px; }
+
+  .club-nou { border-radius: 20px; padding: 16px; background: var(--nit); color: #fff; }
+  .club-nou b { font-family: var(--display); font-size: 1.3rem; text-transform: uppercase; color: var(--groc); }
+  .club-nou p { margin: 6px 0 0; color: #c9d1ee; font-size: 0.9rem; line-height: 1.45; }
+  .club-nou a { color: #fff; font-weight: 700; }
+
+  .peu { text-align: center; font-size: 0.76rem; color: var(--gris); line-height: 1.6; padding: 4px 0 calc(8px + env(safe-area-inset-bottom, 0px)); }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .heroi .marca, .heroi .lema, .heroi .intro, .heroi .xips { animation: puja .6s cubic-bezier(.2,.8,.2,1) both; }
+    .heroi .lema { animation-delay: .06s; } .heroi .intro { animation-delay: .12s; } .heroi .xips { animation-delay: .18s; }
+    @keyframes puja { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="heroi">
+    <svg class="camp" viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g fill="none" stroke="#fff" stroke-opacity="0.07" stroke-width="2">
+        <rect x="-20" y="20" width="440" height="300"/><line x1="200" y1="20" x2="200" y2="320"/><circle cx="200" cy="170" r="48"/>
+        <rect x="320" y="100" width="100" height="140"/>
+      </g>
+    </svg>
+    <div class="marca">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="18" fill="#ffffff" fill-opacity="0.08"/><path d="M41 22a14 14 0 1 0 0 20" fill="none" stroke="#ffc93c" stroke-width="7" stroke-linecap="round"/><circle cx="44" cy="32" r="4.5" fill="#ff4d5a"/></svg>
+      <div class="nom">Convo<b>CAT</b></div>
+    </div>
+    <h1 class="lema">L'app del teu equip,<br><span>gratis i sempre al dia</span></h1>
+    <p class="intro">Partits, resultats, classificació, golejadors i entrenaments de cada equip del club. Al mòbil, amb avisos quan canvia un horari.</p>
+    <div class="xips"><span class="xip">⚽ Dades oficials FCF</span><span class="xip">🔔 Avisos al mòbil</span><span class="xip">💸 Gratis</span></div>
+  </header>
+
+  <main>
+    <h2>Busca el teu club <small id="n-clubs"></small></h2>
+    <div class="cercar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+      <input id="cercar" type="search" placeholder="Nom del club o del poble" aria-label="Busca el teu club" autocomplete="off">
+    </div>
+    <div class="clubs" id="clubs"></div>
+
+    <h2>Com funciona</h2>
+    <div class="passos">
+      <div class="pas"><b>1</b><div><strong>Tria el teu club</strong><span>Hi trobaràs tots els seus equips, per categories.</span></div></div>
+      <div class="pas"><b>2</b><div><strong>Obre l'app del teu equip</strong><span>Toca «Descarregar» al costat del teu equip.</span></div></div>
+      <div class="pas"><b>3</b><div><strong>Instal·la-la al mòbil</strong><span>Queda a la pantalla d'inici amb la seva icona, com qualsevol app.</span></div></div>
+    </div>
+
+    <h2>Què hi trobaràs</h2>
+    <div class="que">
+      <div><b>📅 Calendari</b>Tots els partits i entrenaments.</div>
+      <div><b>🏆 Classificació</b>Oficial, actualitzada cada dia.</div>
+      <div><b>⚽ Golejadors</b>De la lliga i de cada partit.</div>
+      <div><b>🔔 Avisos</b>Canvis d'hora, de camp o de dia.</div>
+    </div>
+
+    <div class="club-nou">
+      <b>El teu club no hi és?</b>
+      <p>ConvoCAT és gratis per als clubs i les famílies. Si vols l'app per al teu club, digues al teu club que ens escrigui i l'afegim.</p>
+    </div>
+
+    <p class="peu">ConvoCAT · Dades oficials de la Federació Catalana de Futbol, revisades cada dia a les 19:00.<br>Els noms i colors dels clubs són dels seus titulars.</p>
+  </main>
+</div>
+
+<script>
+  const CLUBS = [{"slug":"base-calafell","corto":"Base Calafell","nombre":"Escola Futbol Base Calafell CF","localidad":"Calafell","color":"#0f8a3c","equips":40},{"slug":"base-vilanova","corto":"Base Vilanova","nombre":"Base Vilanova 2015, Club Nou Futbol","localidad":"Vilanova i la Geltrú","color":"#1747c9","equips":37},{"slug":"atletic-vilafranca","corto":"Atlètic Vilafranca","nombre":"Fundació E. Atlètic Vilafranca","localidad":"Vilafranca del Penedès","color":"#d0202e","equips":34},{"slug":"cd-ribes","corto":"CD Ribes","nombre":"CD Ribes","localidad":"Sant Pere de Ribes","color":"#1559c4","equips":32},{"slug":"blanca-subur","corto":"Blanca Subur","nombre":"Blanca Subur, C.F.","localidad":"Sitges","color":"#1747c9","equips":25},{"slug":"sant-cugat-fc","corto":"Sant Cugat FC","nombre":"Sant Cugat Futbol Club","localidad":"Sant Cugat del Vallès","color":"#c8102e","equips":51},{"slug":"cf-igualada","corto":"CF Igualada","nombre":"Club de Futbol Igualada","localidad":"Igualada","color":"#1536d6","equips":45},{"slug":"gimnastic-manresa","corto":"Gimnàstic Manresa","nombre":"Gimnàstic Manresa CF","localidad":"Manresa","color":"#1d4fd8","equips":41},{"slug":"ec-granollers","corto":"EC Granollers","nombre":"Esport Club Granollers","localidad":"Granollers","color":"#1f3a68","equips":36},{"slug":"ef-mataro","corto":"EF Mataró","nombre":"Escola Futbol Mataró CE","localidad":"Mataró","color":"#b8860b","equips":31},{"slug":"ce-manresa","corto":"CE Manresa","nombre":"Club Esportiu Manresa","localidad":"Manresa","color":"#e23a0c","equips":30},{"slug":"sant-vicenc-horts","corto":"Sant Vicenç","nombre":"AF Sant Vicenç dels Horts","localidad":"Sant Vicenç dels Horts","color":"#d0202e","equips":29},{"slug":"jabac-terrassa","corto":"Jabac Terrassa","nombre":"UF Base Jabac i Terrassa","localidad":"Terrassa","color":"#2b303c","equips":26},{"slug":"ue-sabadellenca","corto":"UE Sabadellenca","nombre":"UE Sabadellenca","localidad":"Sabadell","color":"#e8650f","equips":25},{"slug":"ue-bordeta","corto":"UE Bordeta","nombre":"UE Bordeta de Lleida","localidad":"Lleida","color":"#d61f2c","equips":25}];
+  const $ = id => document.getElementById(id);
+  const senseAccents = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  const html = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
+  $('n-clubs').textContent = `${CLUBS.length} clubs · ${CLUBS.reduce((s, c) => s + c.equips, 0)} equips`;
+
+  function pinta() {
+    const q = senseAccents($('cercar').value.trim());
+    const llista = CLUBS.filter(c => !q || senseAccents(`${c.corto} ${c.nombre} ${c.localidad}`).includes(q));
+    $('clubs').innerHTML = llista.map(c => `
+      <a class="club" href="/${c.slug}/" style="--c:${c.color}">
+        <img src="/${c.slug}/iconos/app-192.png" alt="" width="56" height="56">
+        <div class="club-txt"><div class="club-nom">${html(c.corto)}</div><div class="club-info">${html(c.localidad)} · ${c.equips} equips</div></div>
+        <i>Entrar</i>
+      </a>`).join('') || '<div class="buit">Encara no tenim aquest club. Escriu-nos i l\'afegim!</div>';
+  }
+  $('cercar').addEventListener('input', pinta);
+  pinta();
+</script>
+</body>
+</html>

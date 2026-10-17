@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Base Calafell · Benjamí S9 B (futbol).",
   "lang": "es",
   "start_url": "/base-calafell/benjami-s9-b/",
-  "scope": "/base-calafell/benjami-s9-b/",
+  "scope": "/base-calafell/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

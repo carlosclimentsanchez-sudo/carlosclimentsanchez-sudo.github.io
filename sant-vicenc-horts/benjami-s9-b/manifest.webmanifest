@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Sant Vicenç · Benjamí S9 B (futbol).",
   "lang": "es",
   "start_url": "/sant-vicenc-horts/benjami-s9-b/",
-  "scope": "/sant-vicenc-horts/benjami-s9-b/",
+  "scope": "/sant-vicenc-horts/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

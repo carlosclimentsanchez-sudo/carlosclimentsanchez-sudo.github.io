@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Sant Cugat FC · Sènior B (Preferent Juvenils) (futbol).",
   "lang": "es",
   "start_url": "/sant-cugat-fc/senior-b-preferent-juvenils/",
-  "scope": "/sant-cugat-fc/senior-b-preferent-juvenils/",
+  "scope": "/sant-cugat-fc/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

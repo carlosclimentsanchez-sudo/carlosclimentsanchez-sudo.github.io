@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Base Calafell · Cadet S16 C (futbol).",
   "lang": "es",
   "start_url": "/base-calafell/cadet-s16-c/",
-  "scope": "/base-calafell/cadet-s16-c/",
+  "scope": "/base-calafell/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

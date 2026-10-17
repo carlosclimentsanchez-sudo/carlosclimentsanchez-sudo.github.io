@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del CD Ribes · Femení Sènior A (futbol).",
   "lang": "es",
   "start_url": "/cd-ribes/femeni-senior-a/",
-  "scope": "/cd-ribes/femeni-senior-a/",
+  "scope": "/cd-ribes/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

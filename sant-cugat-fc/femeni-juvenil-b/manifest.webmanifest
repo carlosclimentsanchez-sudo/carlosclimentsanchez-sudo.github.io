@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Sant Cugat FC · Femení Juvenil B (futbol).",
   "lang": "es",
   "start_url": "/sant-cugat-fc/femeni-juvenil-b/",
-  "scope": "/sant-cugat-fc/femeni-juvenil-b/",
+  "scope": "/sant-cugat-fc/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

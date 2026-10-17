@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Base Calafell · Femení Infantil B (futbol).",
   "lang": "es",
   "start_url": "/base-calafell/femeni-infantil-b/",
-  "scope": "/base-calafell/femeni-infantil-b/",
+  "scope": "/base-calafell/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

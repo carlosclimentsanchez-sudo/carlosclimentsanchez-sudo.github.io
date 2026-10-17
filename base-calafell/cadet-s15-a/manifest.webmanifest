@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Base Calafell · Cadet S15 A (futbol).",
   "lang": "es",
   "start_url": "/base-calafell/cadet-s15-a/",
-  "scope": "/base-calafell/cadet-s15-a/",
+  "scope": "/base-calafell/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del CF Igualada · Aleví S12 B (futbol).",
   "lang": "es",
   "start_url": "/cf-igualada/alevi-s12-b/",
-  "scope": "/cf-igualada/alevi-s12-b/",
+  "scope": "/cf-igualada/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

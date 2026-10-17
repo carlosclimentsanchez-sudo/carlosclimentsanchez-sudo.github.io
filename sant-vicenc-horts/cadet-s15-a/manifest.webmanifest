@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Sant Vicenç · Cadet S15 A (futbol).",
   "lang": "es",
   "start_url": "/sant-vicenc-horts/cadet-s15-a/",
-  "scope": "/sant-vicenc-horts/cadet-s15-a/",
+  "scope": "/sant-vicenc-horts/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

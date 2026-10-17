@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del UE Sabadellenca · Infantil S13 B (futbol).",
   "lang": "es",
   "start_url": "/ue-sabadellenca/infantil-s13-b/",
-  "scope": "/ue-sabadellenca/infantil-s13-b/",
+  "scope": "/ue-sabadellenca/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

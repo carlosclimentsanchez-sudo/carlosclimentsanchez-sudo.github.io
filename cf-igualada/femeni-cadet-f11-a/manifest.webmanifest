@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del CF Igualada · Femení Cadet F11 A (futbol).",
   "lang": "es",
   "start_url": "/cf-igualada/femeni-cadet-f11-a/",
-  "scope": "/cf-igualada/femeni-cadet-f11-a/",
+  "scope": "/cf-igualada/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

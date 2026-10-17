@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del CF Igualada · Juvenil B (futbol).",
   "lang": "es",
   "start_url": "/cf-igualada/juvenil-b/",
-  "scope": "/cf-igualada/juvenil-b/",
+  "scope": "/cf-igualada/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

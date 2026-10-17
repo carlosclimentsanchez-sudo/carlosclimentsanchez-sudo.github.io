@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Sant Cugat FC · Prebenjamí S8 A (futbol).",
   "lang": "es",
   "start_url": "/sant-cugat-fc/prebenjami-s8-a/",
-  "scope": "/sant-cugat-fc/prebenjami-s8-a/",
+  "scope": "/sant-cugat-fc/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

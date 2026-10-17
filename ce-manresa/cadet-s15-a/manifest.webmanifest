@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del CE Manresa · Cadet S15 A (futbol).",
   "lang": "es",
   "start_url": "/ce-manresa/cadet-s15-a/",
-  "scope": "/ce-manresa/cadet-s15-a/",
+  "scope": "/ce-manresa/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

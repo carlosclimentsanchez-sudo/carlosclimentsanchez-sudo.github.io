@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del CE Manresa · Benjamí S9 B (futbol).",
   "lang": "es",
   "start_url": "/ce-manresa/benjami-s9-b/",
-  "scope": "/ce-manresa/benjami-s9-b/",
+  "scope": "/ce-manresa/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

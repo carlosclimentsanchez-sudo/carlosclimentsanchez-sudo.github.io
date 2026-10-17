@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del EF Mataró · Femení Infantil A (futbol).",
   "lang": "es",
   "start_url": "/ef-mataro/femeni-infantil-a/",
-  "scope": "/ef-mataro/femeni-infantil-a/",
+  "scope": "/ef-mataro/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

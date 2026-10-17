@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del UE Bordeta · Cadet S16 A (futbol).",
   "lang": "es",
   "start_url": "/ue-bordeta/cadet-s16-a/",
-  "scope": "/ue-bordeta/cadet-s16-a/",
+  "scope": "/ue-bordeta/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

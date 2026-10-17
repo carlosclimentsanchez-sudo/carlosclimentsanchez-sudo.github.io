@@ -615,6 +615,19 @@
   .cambios li { font-size: 0.88rem; line-height: 1.4; }
   .cambios b { color: var(--tinta); }
 
+  /* ---------- Mis equipos: varios equipos en la misma app ---------- */
+  .mis-equipos { display: flex; gap: 8px; overflow-x: auto; padding: 2px 0 4px; margin: -2px 0 2px; scrollbar-width: none; }
+  .mis-equipos::-webkit-scrollbar { display: none; }
+  .mi-eq {
+    flex: none; display: inline-flex; align-items: center; gap: 7px; padding: 5px 12px 5px 5px; border-radius: 999px;
+    background: var(--blanco); border: 1.5px solid var(--borde, #e3e7ef); color: var(--tinta); text-decoration: none;
+    font-size: 0.82rem; font-weight: 700; white-space: nowrap; font-family: inherit; cursor: pointer;
+  }
+  .mi-eq img { width: 26px; height: 26px; border-radius: 8px; }
+  .mi-eq.actual { background: var(--azul); border-color: var(--azul); color: var(--blanco); }
+  .mi-eq.mas { padding: 7px 14px; color: var(--azul); border-style: dashed; background: transparent; }
+  .mi-eq .quita { margin-left: 2px; font-size: 1rem; line-height: 1; opacity: 0.5; padding: 0 2px; }
+
   /* ---------- Volver a la lista de equipos e instalar ---------- */
   .volver {
     display: inline-block; margin-bottom: 10px;
@@ -715,6 +728,9 @@
       <span class="categoria">Aleví S11 B</span>
     </div>
   </header>
+
+  <!-- Mis equipos: los equipos que la familia ha añadido (se guardan en este móvil) -->
+  <nav class="mis-equipos" id="mis-equipos" aria-label="Mis equipos"></nav>
 
   <!-- Aviso destacado que se pone desde el panel -->
   <section class="aviso-panel" id="aviso-panel" role="status" hidden>
@@ -1501,6 +1517,37 @@
   }
   $('volver').hidden = instalada;
   pintarInstalar();
+
+  // Mis equipos: una familia con varios hijos tiene todos sus equipos en la misma app.
+  // La lista se guarda en este móvil y la comparten todas las apps de ConvoCAT.
+  // Un equipo se añade al abrirlo desde «＋ Añadir» (?anadir=1), o solo si es el primero.
+  const MIS = 'convocat-mis-equipos';
+  const leerMis = () => { try { return JSON.parse(localStorage.getItem(MIS)) || []; } catch (e) { return []; } };
+  const guardarMis = l => { try { localStorage.setItem(MIS, JSON.stringify(l)); } catch (e) {} };
+  const htmlTxt = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
+  function pintarMisEquipos() {
+    const yo = { s: EQUIPO.slug, n: EQUIPO.nombre };
+    let mis = leerMis();
+    const params = new URLSearchParams(location.search);
+    if (params.has('anadir')) history.replaceState(null, '', location.pathname);
+    if (!mis.some(e => e.s === yo.s) && (params.has('anadir') || !mis.length)) { mis.push(yo); guardarMis(mis); }
+    const dentro = mis.some(e => e.s === yo.s);
+    const chip = e => e.s === yo.s
+      ? `<span class="mi-eq actual"><img src="iconos/app-192.png" alt="">${htmlTxt(e.n)}</span>`
+      : `<a class="mi-eq" href="/${e.s}/"><img src="/${e.s}/iconos/app-192.png" alt="" loading="lazy">${htmlTxt(e.n)}<span class="quita" data-quita="${e.s}" role="button" aria-label="Quitar ${htmlTxt(e.n)}">×</span></a>`;
+    $('mis-equipos').innerHTML = !dentro
+      ? '<button class="mi-eq mas" id="mi-anade" type="button">＋ Añadir este equipo a mis equipos</button>'
+      : (mis.length > 1 ? mis.map(chip).join('') : '') +
+        `<a class="mi-eq mas" href="/blanca-subur/?anadir=1">＋ ${mis.length > 1 ? 'Añadir' : 'Añadir otro equipo (hermanos…)'}</a>`;
+    $('mi-anade')?.addEventListener('click', () => { guardarMis([...leerMis(), yo]); pintarMisEquipos(); });
+  }
+  $('mis-equipos').addEventListener('click', e => {
+    const s = e.target.closest('[data-quita]')?.dataset.quita;
+    if (!s) return;
+    e.preventDefault();
+    if (confirm('¿Quitar este equipo de tus equipos?')) { guardarMis(leerMis().filter(x => x.s !== s)); pintarMisEquipos(); }
+  });
+  pintarMisEquipos();
 
   // Entrenos en el pie de la app
   const NOMBRES_DIA = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];

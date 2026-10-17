@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del CE Manresa · Sènior A (futbol).",
   "lang": "es",
   "start_url": "/ce-manresa/senior-a/",
-  "scope": "/ce-manresa/senior-a/",
+  "scope": "/ce-manresa/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

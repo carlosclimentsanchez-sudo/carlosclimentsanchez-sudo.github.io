@@ -1,6 +1,6 @@
 // Guarda la app en el móvil para que abra sin conexión.
 // Estrategia: intenta la red primero (así los cambios llegan solos) y, si no hay cobertura, usa la copia guardada.
-const CACHE = 'base-calafell-juvenil-c-202610171139';
+const CACHE = 'base-calafell-juvenil-c-202610171845';
 const ARCHIVOS = [
   './',
   './index.html',

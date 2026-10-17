@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Atlètic Vilafranca · Aleví S11 C (futbol).",
   "lang": "es",
   "start_url": "/atletic-vilafranca/alevi-s11-c/",
-  "scope": "/atletic-vilafranca/alevi-s11-c/",
+  "scope": "/atletic-vilafranca/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del UE Sabadellenca · Prebenjamí S8 A (futbol).",
   "lang": "es",
   "start_url": "/ue-sabadellenca/prebenjami-s8-a/",
-  "scope": "/ue-sabadellenca/prebenjami-s8-a/",
+  "scope": "/ue-sabadellenca/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

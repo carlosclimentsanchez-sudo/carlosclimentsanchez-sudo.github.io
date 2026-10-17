@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Gimnàstic Manresa · Femení Juvenil A (futbol).",
   "lang": "es",
   "start_url": "/gimnastic-manresa/femeni-juvenil-a/",
-  "scope": "/gimnastic-manresa/femeni-juvenil-a/",
+  "scope": "/gimnastic-manresa/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

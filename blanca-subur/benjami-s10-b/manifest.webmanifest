@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Blanca Subur · Benjamí S10 B (futbol).",
   "lang": "es",
   "start_url": "/blanca-subur/benjami-s10-b/",
-  "scope": "/blanca-subur/benjami-s10-b/",
+  "scope": "/blanca-subur/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

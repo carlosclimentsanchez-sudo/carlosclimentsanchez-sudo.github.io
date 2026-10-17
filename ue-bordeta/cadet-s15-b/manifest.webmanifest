@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del UE Bordeta · Cadet S15 B (futbol).",
   "lang": "es",
   "start_url": "/ue-bordeta/cadet-s15-b/",
-  "scope": "/ue-bordeta/cadet-s15-b/",
+  "scope": "/ue-bordeta/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

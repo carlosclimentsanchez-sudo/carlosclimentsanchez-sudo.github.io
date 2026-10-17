@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del EF Mataró · Benjamí S9 A (futbol).",
   "lang": "es",
   "start_url": "/ef-mataro/benjami-s9-a/",
-  "scope": "/ef-mataro/benjami-s9-a/",
+  "scope": "/ef-mataro/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

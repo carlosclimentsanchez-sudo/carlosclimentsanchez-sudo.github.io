@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del EF Mataró · Sènior A (Preferent Juvenils) (futbol).",
   "lang": "es",
   "start_url": "/ef-mataro/senior-a-preferent-juvenils/",
-  "scope": "/ef-mataro/senior-a-preferent-juvenils/",
+  "scope": "/ef-mataro/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

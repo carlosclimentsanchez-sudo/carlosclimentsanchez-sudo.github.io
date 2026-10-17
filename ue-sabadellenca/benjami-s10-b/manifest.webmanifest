@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del UE Sabadellenca · Benjamí S10 B (futbol).",
   "lang": "es",
   "start_url": "/ue-sabadellenca/benjami-s10-b/",
-  "scope": "/ue-sabadellenca/benjami-s10-b/",
+  "scope": "/ue-sabadellenca/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

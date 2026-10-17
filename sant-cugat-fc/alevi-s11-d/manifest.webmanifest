@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Sant Cugat FC · Aleví S11 D (futbol).",
   "lang": "es",
   "start_url": "/sant-cugat-fc/alevi-s11-d/",
-  "scope": "/sant-cugat-fc/alevi-s11-d/",
+  "scope": "/sant-cugat-fc/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Blanca Subur · Femení Aleví A (futbol).",
   "lang": "es",
   "start_url": "/blanca-subur/femeni-alevi-a/",
-  "scope": "/blanca-subur/femeni-alevi-a/",
+  "scope": "/blanca-subur/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

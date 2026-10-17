@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del EF Mataró · Infantil S14 C (futbol).",
   "lang": "es",
   "start_url": "/ef-mataro/infantil-s14-c/",
-  "scope": "/ef-mataro/infantil-s14-c/",
+  "scope": "/ef-mataro/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

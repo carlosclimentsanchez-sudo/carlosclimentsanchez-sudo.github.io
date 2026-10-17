@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del UE Sabadellenca · Juvenil C (futbol).",
   "lang": "es",
   "start_url": "/ue-sabadellenca/juvenil-c/",
-  "scope": "/ue-sabadellenca/juvenil-c/",
+  "scope": "/ue-sabadellenca/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

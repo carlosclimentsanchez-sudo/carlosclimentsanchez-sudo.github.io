@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del CE Manresa · Aleví S12 D (futbol).",
   "lang": "es",
   "start_url": "/ce-manresa/alevi-s12-d/",
-  "scope": "/ce-manresa/alevi-s12-d/",
+  "scope": "/ce-manresa/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

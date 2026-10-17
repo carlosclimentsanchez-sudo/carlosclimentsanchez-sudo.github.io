@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del UE Bordeta · Infantil S13 A (futbol).",
   "lang": "es",
   "start_url": "/ue-bordeta/infantil-s13-a/",
-  "scope": "/ue-bordeta/infantil-s13-a/",
+  "scope": "/ue-bordeta/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

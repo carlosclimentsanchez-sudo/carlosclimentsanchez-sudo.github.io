@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del CF Igualada · Infantil S14 D (futbol).",
   "lang": "es",
   "start_url": "/cf-igualada/infantil-s14-d/",
-  "scope": "/cf-igualada/infantil-s14-d/",
+  "scope": "/cf-igualada/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

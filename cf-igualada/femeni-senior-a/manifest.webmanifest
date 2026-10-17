@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del CF Igualada · Femení Sènior A (futbol).",
   "lang": "es",
   "start_url": "/cf-igualada/femeni-senior-a/",
-  "scope": "/cf-igualada/femeni-senior-a/",
+  "scope": "/cf-igualada/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

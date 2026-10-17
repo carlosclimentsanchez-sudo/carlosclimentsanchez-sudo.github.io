@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Base Vilanova · Infantil S14 A (futbol).",
   "lang": "es",
   "start_url": "/base-vilanova/infantil-s14-a/",
-  "scope": "/base-vilanova/infantil-s14-a/",
+  "scope": "/base-vilanova/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

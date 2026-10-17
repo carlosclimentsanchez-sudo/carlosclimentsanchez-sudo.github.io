@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Gimnàstic Manresa · Aleví S12 C (futbol).",
   "lang": "es",
   "start_url": "/gimnastic-manresa/alevi-s12-c/",
-  "scope": "/gimnastic-manresa/alevi-s12-c/",
+  "scope": "/gimnastic-manresa/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

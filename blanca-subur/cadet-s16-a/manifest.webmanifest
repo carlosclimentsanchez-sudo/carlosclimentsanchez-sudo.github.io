@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Blanca Subur · Cadet S16 A (futbol).",
   "lang": "es",
   "start_url": "/blanca-subur/cadet-s16-a/",
-  "scope": "/blanca-subur/cadet-s16-a/",
+  "scope": "/blanca-subur/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del UE Bordeta · Infantil S14 B (futbol).",
   "lang": "es",
   "start_url": "/ue-bordeta/infantil-s14-b/",
-  "scope": "/ue-bordeta/infantil-s14-b/",
+  "scope": "/ue-bordeta/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

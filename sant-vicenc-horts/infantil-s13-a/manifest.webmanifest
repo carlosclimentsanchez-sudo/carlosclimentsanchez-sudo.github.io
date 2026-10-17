@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Sant Vicenç · Infantil S13 A (futbol).",
   "lang": "es",
   "start_url": "/sant-vicenc-horts/infantil-s13-a/",
-  "scope": "/sant-vicenc-horts/infantil-s13-a/",
+  "scope": "/sant-vicenc-horts/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

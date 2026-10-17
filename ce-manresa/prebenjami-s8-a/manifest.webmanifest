@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del CE Manresa · Prebenjamí S8 A (futbol).",
   "lang": "es",
   "start_url": "/ce-manresa/prebenjami-s8-a/",
-  "scope": "/ce-manresa/prebenjami-s8-a/",
+  "scope": "/ce-manresa/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

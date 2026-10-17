@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Atlètic Vilafranca · Sènior A (futbol).",
   "lang": "es",
   "start_url": "/atletic-vilafranca/senior-a/",
-  "scope": "/atletic-vilafranca/senior-a/",
+  "scope": "/atletic-vilafranca/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

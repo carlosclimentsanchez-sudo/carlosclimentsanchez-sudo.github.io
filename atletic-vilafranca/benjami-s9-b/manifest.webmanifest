@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Atlètic Vilafranca · Benjamí S9 B (futbol).",
   "lang": "es",
   "start_url": "/atletic-vilafranca/benjami-s9-b/",
-  "scope": "/atletic-vilafranca/benjami-s9-b/",
+  "scope": "/atletic-vilafranca/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

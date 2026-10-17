@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Base Calafell · Aleví S12 C (futbol).",
   "lang": "es",
   "start_url": "/base-calafell/alevi-s12-c/",
-  "scope": "/base-calafell/alevi-s12-c/",
+  "scope": "/base-calafell/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

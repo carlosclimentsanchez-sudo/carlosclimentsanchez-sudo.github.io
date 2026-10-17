@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Sant Cugat FC · Cadet S15 A (futbol).",
   "lang": "es",
   "start_url": "/sant-cugat-fc/cadet-s15-a/",
-  "scope": "/sant-cugat-fc/cadet-s15-a/",
+  "scope": "/sant-cugat-fc/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

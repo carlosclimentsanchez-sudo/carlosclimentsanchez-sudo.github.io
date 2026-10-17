@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del EC Granollers · Benjamí S10 D (futbol).",
   "lang": "es",
   "start_url": "/ec-granollers/benjami-s10-d/",
-  "scope": "/ec-granollers/benjami-s10-d/",
+  "scope": "/ec-granollers/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

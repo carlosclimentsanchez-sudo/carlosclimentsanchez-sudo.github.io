@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del CE Manresa · Femení Cadet F7 A (futbol).",
   "lang": "es",
   "start_url": "/ce-manresa/femeni-cadet-f7-a/",
-  "scope": "/ce-manresa/femeni-cadet-f7-a/",
+  "scope": "/ce-manresa/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

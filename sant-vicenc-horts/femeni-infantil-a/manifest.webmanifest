@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Sant Vicenç · Femení Infantil A (futbol).",
   "lang": "es",
   "start_url": "/sant-vicenc-horts/femeni-infantil-a/",
-  "scope": "/sant-vicenc-horts/femeni-infantil-a/",
+  "scope": "/sant-vicenc-horts/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

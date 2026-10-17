@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del CF Igualada · Benjamí S9 C (futbol).",
   "lang": "es",
   "start_url": "/cf-igualada/benjami-s9-c/",
-  "scope": "/cf-igualada/benjami-s9-c/",
+  "scope": "/cf-igualada/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

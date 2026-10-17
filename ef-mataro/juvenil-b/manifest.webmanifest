@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del EF Mataró · Juvenil B (futbol).",
   "lang": "es",
   "start_url": "/ef-mataro/juvenil-b/",
-  "scope": "/ef-mataro/juvenil-b/",
+  "scope": "/ef-mataro/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

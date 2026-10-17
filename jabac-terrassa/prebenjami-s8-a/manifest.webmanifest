@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Jabac Terrassa · Prebenjamí S8 A (futbol).",
   "lang": "es",
   "start_url": "/jabac-terrassa/prebenjami-s8-a/",
-  "scope": "/jabac-terrassa/prebenjami-s8-a/",
+  "scope": "/jabac-terrassa/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

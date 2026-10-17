@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del CE Manresa · Infantil S13 B (futbol).",
   "lang": "es",
   "start_url": "/ce-manresa/infantil-s13-b/",
-  "scope": "/ce-manresa/infantil-s13-b/",
+  "scope": "/ce-manresa/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

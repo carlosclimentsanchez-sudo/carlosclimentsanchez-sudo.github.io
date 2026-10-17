@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Atlètic Vilafranca · Prebenjamí S8 B (futbol).",
   "lang": "es",
   "start_url": "/atletic-vilafranca/prebenjami-s8-b/",
-  "scope": "/atletic-vilafranca/prebenjami-s8-b/",
+  "scope": "/atletic-vilafranca/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del EF Mataró · Infantil S13 B (futbol).",
   "lang": "es",
   "start_url": "/ef-mataro/infantil-s13-b/",
-  "scope": "/ef-mataro/infantil-s13-b/",
+  "scope": "/ef-mataro/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

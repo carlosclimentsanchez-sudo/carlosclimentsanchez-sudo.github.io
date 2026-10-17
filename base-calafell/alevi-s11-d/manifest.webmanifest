@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Base Calafell · Aleví S11 D (futbol).",
   "lang": "es",
   "start_url": "/base-calafell/alevi-s11-d/",
-  "scope": "/base-calafell/alevi-s11-d/",
+  "scope": "/base-calafell/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

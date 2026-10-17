@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del CF Igualada · Cadet S16 C (futbol).",
   "lang": "es",
   "start_url": "/cf-igualada/cadet-s16-c/",
-  "scope": "/cf-igualada/cadet-s16-c/",
+  "scope": "/cf-igualada/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

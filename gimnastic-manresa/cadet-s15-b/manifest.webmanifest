@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Gimnàstic Manresa · Cadet S15 B (futbol).",
   "lang": "es",
   "start_url": "/gimnastic-manresa/cadet-s15-b/",
-  "scope": "/gimnastic-manresa/cadet-s15-b/",
+  "scope": "/gimnastic-manresa/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

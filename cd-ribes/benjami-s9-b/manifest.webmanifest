@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del CD Ribes · Benjamí S9 B (futbol).",
   "lang": "es",
   "start_url": "/cd-ribes/benjami-s9-b/",
-  "scope": "/cd-ribes/benjami-s9-b/",
+  "scope": "/cd-ribes/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

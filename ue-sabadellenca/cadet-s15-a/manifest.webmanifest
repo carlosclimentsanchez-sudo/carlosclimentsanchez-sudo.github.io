@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del UE Sabadellenca · Cadet S15 A (futbol).",
   "lang": "es",
   "start_url": "/ue-sabadellenca/cadet-s15-a/",
-  "scope": "/ue-sabadellenca/cadet-s15-a/",
+  "scope": "/ue-sabadellenca/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Base Calafell · Benjamí S10 D (futbol).",
   "lang": "es",
   "start_url": "/base-calafell/benjami-s10-d/",
-  "scope": "/base-calafell/benjami-s10-d/",
+  "scope": "/base-calafell/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

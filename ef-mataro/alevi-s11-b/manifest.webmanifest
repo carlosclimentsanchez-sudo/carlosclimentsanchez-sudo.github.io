@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del EF Mataró · Aleví S11 B (futbol).",
   "lang": "es",
   "start_url": "/ef-mataro/alevi-s11-b/",
-  "scope": "/ef-mataro/alevi-s11-b/",
+  "scope": "/ef-mataro/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

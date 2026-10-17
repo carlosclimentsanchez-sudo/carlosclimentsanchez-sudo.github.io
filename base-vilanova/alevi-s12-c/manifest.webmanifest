@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Base Vilanova · Aleví S12 C (futbol).",
   "lang": "es",
   "start_url": "/base-vilanova/alevi-s12-c/",
-  "scope": "/base-vilanova/alevi-s12-c/",
+  "scope": "/base-vilanova/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

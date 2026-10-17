@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del UE Bordeta · Juvenil B (futbol).",
   "lang": "es",
   "start_url": "/ue-bordeta/juvenil-b/",
-  "scope": "/ue-bordeta/juvenil-b/",
+  "scope": "/ue-bordeta/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

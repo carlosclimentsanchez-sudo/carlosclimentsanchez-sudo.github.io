@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del CD Ribes · Aleví S11 B (futbol).",
   "lang": "es",
   "start_url": "/cd-ribes/alevi-s11-b/",
-  "scope": "/cd-ribes/alevi-s11-b/",
+  "scope": "/cd-ribes/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

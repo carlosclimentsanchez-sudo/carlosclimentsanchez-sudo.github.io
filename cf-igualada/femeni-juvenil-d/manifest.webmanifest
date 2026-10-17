@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del CF Igualada · Femení Juvenil D (futbol).",
   "lang": "es",
   "start_url": "/cf-igualada/femeni-juvenil-d/",
-  "scope": "/cf-igualada/femeni-juvenil-d/",
+  "scope": "/cf-igualada/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

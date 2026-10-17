@@ -1,6 +1,6 @@
 // Guarda la app en el móvil para que abra sin conexión.
 // Estrategia: intenta la red primero (así los cambios llegan solos) y, si no hay cobertura, usa la copia guardada.
-const CACHE = 'sant-cugat-fc-benjami-s9-d-202610171139';
+const CACHE = 'sant-cugat-fc-benjami-s9-d-202610171845';
 const ARCHIVOS = [
   './',
   './index.html',

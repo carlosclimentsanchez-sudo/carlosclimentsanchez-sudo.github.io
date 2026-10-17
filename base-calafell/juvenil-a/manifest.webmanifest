@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Base Calafell · Juvenil A (futbol).",
   "lang": "es",
   "start_url": "/base-calafell/juvenil-a/",
-  "scope": "/base-calafell/juvenil-a/",
+  "scope": "/base-calafell/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

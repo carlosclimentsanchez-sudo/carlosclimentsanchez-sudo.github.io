@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Sant Cugat FC · Juvenil A (futbol).",
   "lang": "es",
   "start_url": "/sant-cugat-fc/juvenil-a/",
-  "scope": "/sant-cugat-fc/juvenil-a/",
+  "scope": "/sant-cugat-fc/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

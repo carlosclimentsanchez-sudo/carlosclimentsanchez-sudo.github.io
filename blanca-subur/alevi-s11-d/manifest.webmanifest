@@ -5,7 +5,7 @@
   "description": "Partidos, entrenos y clasificación del Blanca Subur · Aleví S11 D (futbol).",
   "lang": "es",
   "start_url": "/blanca-subur/alevi-s11-d/",
-  "scope": "/blanca-subur/alevi-s11-d/",
+  "scope": "/blanca-subur/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

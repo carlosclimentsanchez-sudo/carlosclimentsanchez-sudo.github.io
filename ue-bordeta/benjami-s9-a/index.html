@@ -761,6 +761,13 @@
   <!-- Avisos en el móvil (notificaciones push) -->
   <section class="avisos-card" id="avisos-card" aria-label="Avisos" hidden></section>
 
+  <!-- Compartir la app con el equipo (WhatsApp, etc.) -->
+  <section class="avisos-card" id="compartir-card" aria-label="Compartir la app">
+    <div class="avisos-icono" id="compartir-ico"></div>
+    <div class="avisos-txt"><div class="avisos-titulo">Comparte la app con tu equipo</div><div class="avisos-sub">Pásala al grupo de WhatsApp de las familias y los jugadores.</div></div>
+    <button class="btn-azul" id="compartir-btn" type="button">Compartir</button>
+  </section>
+
   <!-- Cambios recientes en el calendario (lo rellena la revisión diaria) -->
   <section class="cambios" id="cambios" aria-label="Cambios en el calendario" hidden></section>
 
@@ -1517,6 +1524,20 @@
   }
   $('volver').hidden = instalada;
   pintarInstalar();
+
+  // Compartir la app: el móvil abre su menú de compartir (WhatsApp, Telegram…); si no puede, abre WhatsApp directamente.
+  // Se comparte la dirección de Netlify, que funciona siempre y lleva a donde estén las páginas.
+  const ICONO_COMPARTIR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>';
+  $('compartir-ico').innerHTML = ICONO_COMPARTIR;
+  $('compartir-btn').addEventListener('click', async () => {
+    const url = 'https://calendari-futbol-base-demo.netlify.app/' + EQUIPO.slug + '/';
+    const texto = `⚽ Tots els partits, resultats i horaris del ${NUESTRO} · ${EQUIPO.nombre} al mòbil. Descarrega't l'app gratis 👉`;
+    if (navigator.share) {
+      try { await navigator.share({ title: `${NUESTRO} · ${EQUIPO.nombre}`, text: texto, url }); return; }
+      catch (e) { if (e.name === 'AbortError') return; }
+    }
+    window.open('https://wa.me/?text=' + encodeURIComponent(texto + ' ' + url), '_blank');
+  });
 
   // Mis equipos: una familia con varios hijos tiene todos sus equipos en la misma app.
   // La lista se guarda en este móvil y la comparten todas las apps de ConvoCAT.
